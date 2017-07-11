@@ -1,0 +1,1 @@
+x=[str(input("Type in Nucleoltide sequence"))]

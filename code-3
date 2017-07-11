@@ -1,0 +1,17 @@
+D={}
+
+f=open("/share/data/genetic-code.txt")
+line=f.readlines()
+y=range(len(line))
+for i in y:
+      x=line[i].split() 
+      D[x[0]]=x[1]
+
+
+g=open("/share/data/adh/ALDH.txt")
+line1=g.readline()
+
+for i in range(0,len(line1),3):
+	z=line1[i:i+3]
+	print D[z],
+
