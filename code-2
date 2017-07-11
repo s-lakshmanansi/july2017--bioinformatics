@@ -1,0 +1,11 @@
+D={}
+f=open("/share/data/states.txt")
+line=f.readlines()
+y=range(len(line))
+for i in y:
+      x=line[i].split() 
+      if len(x)>2:
+	D[x[0]]=x[1]+" "+x[2]
+      else:
+        D[x[0]]=x[1]
+print D[str(input("Type in a state abbreviation:  "))]
