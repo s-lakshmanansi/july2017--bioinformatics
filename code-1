@@ -1,0 +1,17 @@
+#Counts the number of  a,g,t,c
+s=0
+t=0
+u=0
+v=0
+SEQ= "ATGAAATACGCTGATATTCGTATTCGAGTCGGATTTTTGCTTAGCTTAGAAGGGATCAAATA"
+for a in SEQ:
+     if a=="A":
+        s=s+1
+     elif a=="T":
+        t=t+1
+     elif a=="G":
+        u=u+1
+     elif a=="C":
+        v=v+1
+print " A has",s,"             T has", t, "          G has", u, "              C has",v
+
