@@ -3,7 +3,7 @@ s=0
 t=0
 u=0
 v=0
-SEQ= "ATGAAATACGCTGATATTCGTATTCGAGTCGGATTTTTGCTTAGCTTAGAAGGGATCAAATA"
+SEQ=[str(input(":  "))]
 for a in SEQ:
      if a=="A":
         s=s+1
@@ -14,4 +14,5 @@ for a in SEQ:
      elif a=="C":
         v=v+1
 print " A has",s,"             T has", t, "          G has", u, "              C has",v
+
 
