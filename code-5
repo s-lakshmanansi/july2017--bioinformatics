@@ -1,0 +1,31 @@
+import random
+s=""
+
+for i in range(0,300):
+        x=random.randint(1,4)
+        if x==1:
+                s=s+"A"
+
+        if x==2:
+                s=s+"T"
+
+        if x==3:
+                s=s+"G"
+
+        if x==4:
+                s=s+"C"
+
+
+
+D={}
+
+f=open("/share/data/genetic-code.txt")
+line=f.readlines()
+y=range(len(line))
+for i in y:
+      x=line[i].split()
+      D[x[0]]=x[1]
+
+for i in range(0,len(s),3):
+        a=s[i:i+3]
+        print D[a],
